@@ -5,33 +5,7 @@
 
     I modified the script because it seems, that the Settings app is poorly supporting AppleScript, wich lead to a lot of issues. -> Script now not working with the settings app, but rather using the "Control Center" in the head bar of MacOs.
 
-    tell application "System Events"
-        
-        tell its application process "ControlCenter"
-            
-            tell its menu bar 1
-                -- click on and open Control Center drop down
-                tell (UI elements whose description is "Kontrollzentrum")
-                    click
-                end tell
-            end tell
-            
-            
-            -- interact with Control Center window
-            tell its window "Kontrollzentrum"
-                delay 0.5
-                -- click screen mirroring button
-                set screenMirroringButton to button 2 of group 1
-                -- click screenMirroringButton click doesn't work
-                perform action 1 of screenMirroringButton
-                delay 0.5
-                set myScreen to checkbox 1 of its scroll area 1 of group 1
-                perform action 1 of myScreen
-            end tell
-            
-            
-        end tell
-    end tell
+   Script is added to the repository!
 
     Note that "Kontrollzentrum" is the german term for "Control Center", change it to term used by your system. In English it should be "Control Center".
 
