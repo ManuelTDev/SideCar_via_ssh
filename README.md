@@ -7,7 +7,7 @@
 
    Script is added to the repository!
 
-    Note that "Kontrollzentrum" is the german term for "Control Center", change it to term used by your system. In English it should be "Control Center".
+    !!! Note that "Kontrollzentrum" is the german term for "Control Center", change it to term used by your system. In English it should be "Control Center".
 
     After I got this script to run in AppleScript I tried starting it from the iPad via a schortcut (run script via ssh). 
     The shortcut contains a single line of instruction:
@@ -20,6 +20,8 @@
 
     Open settings app -> go to Security Settings -> accessibility Settings -> give ssh-keygen-wrapper & terminal (maybe AppleScript as well, just to be sure) the rights!
 
+
+    Same step but in german:
     Einstellungen öffnen -> Datenschutz & Sicherheit -> Bedienungshilfen -> sshkeygen-wrapper & Terminal die Berechtigungen erteilen (zur Sicherheit auch AppleScript).
 
     Now it should work! Have fun!
